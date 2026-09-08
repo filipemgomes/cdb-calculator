@@ -1,0 +1,102 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cdb.Domain", "src\Cdb.Domain\Cdb.Domain.csproj", "{A15851EC-DEEB-4D95-BC4E-17C7E4F126E1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cdb.Domain.Tests", "tests\Cdb.Domain.Tests\Cdb.Domain.Tests.csproj", "{FE171EF1-1F64-49B1-B733-BB13C8AB171D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cdb-web", "cdb-web", "{B3E9A9F1-6C2E-4E0B-9F9D-2E9A2E5C8D2A}"
+	ProjectSection(SolutionItems) = preProject
+		src\cdb-web\angular.json = src\cdb-web\angular.json
+		src\cdb-web\package.json = src\cdb-web\package.json
+		src\cdb-web\tsconfig.json = src\cdb-web\tsconfig.json
+		src\cdb-web\tsconfig.app.json = src\cdb-web\tsconfig.app.json
+		src\cdb-web\tsconfig.spec.json = src\cdb-web\tsconfig.spec.json
+		src\cdb-web\proxy.conf.json = src\cdb-web\proxy.conf.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C4BD4395-59DD-4337-A792-5DB0AC31C12C}"
+	ProjectSection(SolutionItems) = preProject
+		src\cdb-web\src\index.html = src\cdb-web\src\index.html
+		src\cdb-web\src\main.ts = src\cdb-web\src\main.ts
+		src\cdb-web\src\styles.scss = src\cdb-web\src\styles.scss
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "app", "app", "{34160379-1A42-4D0F-B59F-14A8369F8774}"
+	ProjectSection(SolutionItems) = preProject
+		src\cdb-web\src\app\app.config.ts = src\cdb-web\src\app\app.config.ts
+		src\cdb-web\src\app\app.html = src\cdb-web\src\app\app.html
+		src\cdb-web\src\app\app.scss = src\cdb-web\src\app\app.scss
+		src\cdb-web\src\app\app.spec.ts = src\cdb-web\src\app\app.spec.ts
+		src\cdb-web\src\app\app.ts = src\cdb-web\src\app\app.ts
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cdb-simulator", "cdb-simulator", "{4E1B2E26-FF3D-4531-AE68-9691B6A6E5EA}"
+	ProjectSection(SolutionItems) = preProject
+		src\cdb-web\src\app\cdb-simulator\cdb-simulator.component.html = src\cdb-web\src\app\cdb-simulator\cdb-simulator.component.html
+		src\cdb-web\src\app\cdb-simulator\cdb-simulator.component.scss = src\cdb-web\src\app\cdb-simulator\cdb-simulator.component.scss
+		src\cdb-web\src\app\cdb-simulator\cdb-simulator.component.spec.ts = src\cdb-web\src\app\cdb-simulator\cdb-simulator.component.spec.ts
+		src\cdb-web\src\app\cdb-simulator\cdb-simulator.component.ts = src\cdb-web\src\app\cdb-simulator\cdb-simulator.component.ts
+		src\cdb-web\src\app\cdb-simulator\cdb.service.ts = src\cdb-web\src\app\cdb-simulator\cdb.service.ts
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cdb.WebApi", "src\Cdb.WebApi\Cdb.WebApi.csproj", "{A0A56991-7891-4DE7-A9D0-ABFE1D0DE76F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A15851EC-DEEB-4D95-BC4E-17C7E4F126E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A15851EC-DEEB-4D95-BC4E-17C7E4F126E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A15851EC-DEEB-4D95-BC4E-17C7E4F126E1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A15851EC-DEEB-4D95-BC4E-17C7E4F126E1}.Debug|x64.Build.0 = Debug|Any CPU
+		{A15851EC-DEEB-4D95-BC4E-17C7E4F126E1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A15851EC-DEEB-4D95-BC4E-17C7E4F126E1}.Debug|x86.Build.0 = Debug|Any CPU
+		{A15851EC-DEEB-4D95-BC4E-17C7E4F126E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A15851EC-DEEB-4D95-BC4E-17C7E4F126E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A15851EC-DEEB-4D95-BC4E-17C7E4F126E1}.Release|x64.ActiveCfg = Release|Any CPU
+		{A15851EC-DEEB-4D95-BC4E-17C7E4F126E1}.Release|x64.Build.0 = Release|Any CPU
+		{A15851EC-DEEB-4D95-BC4E-17C7E4F126E1}.Release|x86.ActiveCfg = Release|Any CPU
+		{A15851EC-DEEB-4D95-BC4E-17C7E4F126E1}.Release|x86.Build.0 = Release|Any CPU
+		{FE171EF1-1F64-49B1-B733-BB13C8AB171D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE171EF1-1F64-49B1-B733-BB13C8AB171D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE171EF1-1F64-49B1-B733-BB13C8AB171D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FE171EF1-1F64-49B1-B733-BB13C8AB171D}.Debug|x64.Build.0 = Debug|Any CPU
+		{FE171EF1-1F64-49B1-B733-BB13C8AB171D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FE171EF1-1F64-49B1-B733-BB13C8AB171D}.Debug|x86.Build.0 = Debug|Any CPU
+		{FE171EF1-1F64-49B1-B733-BB13C8AB171D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE171EF1-1F64-49B1-B733-BB13C8AB171D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE171EF1-1F64-49B1-B733-BB13C8AB171D}.Release|x64.ActiveCfg = Release|Any CPU
+		{FE171EF1-1F64-49B1-B733-BB13C8AB171D}.Release|x64.Build.0 = Release|Any CPU
+		{FE171EF1-1F64-49B1-B733-BB13C8AB171D}.Release|x86.ActiveCfg = Release|Any CPU
+		{FE171EF1-1F64-49B1-B733-BB13C8AB171D}.Release|x86.Build.0 = Release|Any CPU
+		{A0A56991-7891-4DE7-A9D0-ABFE1D0DE76F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0A56991-7891-4DE7-A9D0-ABFE1D0DE76F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0A56991-7891-4DE7-A9D0-ABFE1D0DE76F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A0A56991-7891-4DE7-A9D0-ABFE1D0DE76F}.Debug|x64.Build.0 = Debug|Any CPU
+		{A0A56991-7891-4DE7-A9D0-ABFE1D0DE76F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A0A56991-7891-4DE7-A9D0-ABFE1D0DE76F}.Debug|x86.Build.0 = Debug|Any CPU
+		{A0A56991-7891-4DE7-A9D0-ABFE1D0DE76F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0A56991-7891-4DE7-A9D0-ABFE1D0DE76F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0A56991-7891-4DE7-A9D0-ABFE1D0DE76F}.Release|x64.ActiveCfg = Release|Any CPU
+		{A0A56991-7891-4DE7-A9D0-ABFE1D0DE76F}.Release|x64.Build.0 = Release|Any CPU
+		{A0A56991-7891-4DE7-A9D0-ABFE1D0DE76F}.Release|x86.ActiveCfg = Release|Any CPU
+		{A0A56991-7891-4DE7-A9D0-ABFE1D0DE76F}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C4BD4395-59DD-4337-A792-5DB0AC31C12C} = {B3E9A9F1-6C2E-4E0B-9F9D-2E9A2E5C8D2A}
+		{34160379-1A42-4D0F-B59F-14A8369F8774} = {C4BD4395-59DD-4337-A792-5DB0AC31C12C}
+		{4E1B2E26-FF3D-4531-AE68-9691B6A6E5EA} = {34160379-1A42-4D0F-B59F-14A8369F8774}
+	EndGlobalSection
+EndGlobal

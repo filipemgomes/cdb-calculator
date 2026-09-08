@@ -1,0 +1,68 @@
+<section class="simulador">
+  <header class="simulador__header">
+    <h1>Simulador de CDB</h1>
+    <p class="simulador__subtitulo">Simule o rendimento do seu investimento</p>
+  </header>
+
+  <form class="form" [formGroup]="form" (ngSubmit)="simulate()" novalidate>
+    <div class="campo">
+      <label for="valorInicial">Valor a investir (R$)</label>
+      <input
+        id="valorInicial"
+        type="number"
+        step="0.01"
+        formControlName="valorInicial"
+      />
+      @if (form.controls.valorInicial.touched && form.controls.valorInicial.invalid) {
+        <p class="erro-campo">
+          @if (form.controls.valorInicial.errors?.['required']) {
+            Informe um valor a investir.
+          } @else {
+            O valor deve ser positivo.
+          }
+        </p>
+      }
+    </div>
+
+    <div class="campo">
+      <label for="prazoMeses">Prazo (meses)</label>
+      <input id="prazoMeses" type="number" step="1" formControlName="prazoMeses" />
+      @if (form.controls.prazoMeses.touched && form.controls.prazoMeses.invalid) {
+        <p class="erro-campo">
+          @if (form.controls.prazoMeses.errors?.['required']) {
+            Informe o prazo em meses.
+          } @else {
+            O prazo deve ser um número inteiro de meses maior que 1.
+          }
+        </p>
+      }
+    </div>
+
+    <button type="submit" [disabled]="loading()">
+      {{ loading() ? 'Calculando...' : 'Calcular' }}
+    </button>
+  </form>
+
+  @if (errors().length) {
+    <div class="mensagem-erro" role="alert">
+      <ul>
+        @for (error of errors(); track error) {
+          <li>{{ error }}</li>
+        }
+      </ul>
+    </div>
+  }
+
+  @if (result(); as result) {
+    <div class="resultado">
+      <div class="resultado__item">
+        <span class="resultado__rotulo">Resultado bruto</span>
+        <span class="resultado__valor">{{ result.resultadoBruto | currency: 'BRL' }}</span>
+      </div>
+      <div class="resultado__item">
+        <span class="resultado__rotulo">Resultado líquido</span>
+        <span class="resultado__valor resultado__valor--destaque">{{ result.resultadoLiquido | currency: 'BRL' }}</span>
+      </div>
+    </div>
+  }
+</section>

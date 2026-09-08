@@ -1,0 +1,32 @@
+# .NET build output
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+*.dll
+*.pdb
+
+# Visual Studio
+.vs/
+UpgradeLog.htm
+Backup/
+
+# Angular / Node
+node_modules/
+dist/
+.angular/
+npm-debug.log*
+
+# Test results / coverage
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+
+# Local working files (notes, planning, tooling config) — not part of the delivered solution
+.workspace/
